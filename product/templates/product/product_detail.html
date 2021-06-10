@@ -1,0 +1,30 @@
+{% extends 'product/base.html'%} {% block content%}
+<br></br>
+<br></br>
+  <article class="media content-section">
+   <img class="rounded-circle article-img" src="{{ product.image.url }}">
+</article>
+<h1> <a href="{% url 'buy-page' product.id %}"> AUTHENTICATE YOUR FACE SHOT AND BUY NOW </a> 
+<div class = "container">
+  <table class="table">
+    <thead class="thead-dark">
+      <tr>
+        <th scope="col">Category</th>
+        <th scope="col">Item Name</th>
+        <th scope="col">Quantity</th>
+        <th scope="col">Unit Price(₦)</th>   
+      </tr>
+    </thead>
+    <tbody>
+      <tr>    
+        <td>{{product.category_name}}</td>
+        <td>{{product.item_name}}</td>
+        <td>{{product.total_quantity}}</td>
+        <td>{{product.unit_price}}</td>   
+      </tr>
+    </tbody>  
+  </table>
+</div>
+</h1>
+
+{% endblock %}

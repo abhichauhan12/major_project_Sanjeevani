@@ -1,0 +1,21 @@
+{% extends "product/base.html" %}
+{% block content %}
+
+ <form method="POST">
+        {% csrf_token %}    
+        <h1>{{ prod.item_name }}</h1>
+        <div class = "form-group">
+        	{% if prod.Schedule_H %}
+        	<h1> UPLOAD PRESCRIPTION </h1>
+        	<input type="file" name="image" accept="image/*" class="clearablefileinput form-control-file" id="id_image">
+        	{% else %}
+        	<h1> NO PRESCRIPTION REQUIRED </h1>
+        	{% endif %}
+        	<div class="form-group">
+        	<label for="quantity">Quantity :</label> </div>
+			<input type="number" id="quantity" name="quantity" min="1" max="{{ prod.total_quantity }}">
+            <button class = "btn btn-outline-info" type="submit">AUTHENTICATE</button>
+        	
+        </div>
+    </form>
+{% endblock content %}
