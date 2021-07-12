@@ -15,7 +15,8 @@ import numpy as np
 def func(loc):
     video_capture = cv2.VideoCapture(0)
     arr = loc.split('/')
-    s = "D:/Sanjeevani/"
+    # s = "D:/Sanjeevani/"
+    s = "C:/Users/abhis/Desktop/Sanjeevani/media/profile_pics/"
     s += arr[-1]
     # print(s)
     # Load a sample picture and learn how to recognize it.

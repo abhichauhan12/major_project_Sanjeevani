@@ -17,7 +17,9 @@ def func(loc):
     arr = loc.split('/')
     # print(arr)
     # Load a sample picture and learn how to recognize it.
-    s = "D:/Sanjeevani/"
+    # s = "D:/Sanjeevani/"
+    s = "C:/Users/abhis/Desktop/Sanjeevani/"
+
     s = s + arr[-1]
     print("YESS")
     print(s)

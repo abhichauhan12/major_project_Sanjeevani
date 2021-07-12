@@ -20,7 +20,7 @@ def facedect():
                 # loc=(str(MEDIA_ROOT)+loc)
                 # print(loc)
                 # print("/home/light/codes/web/djangoproject/mysite/pages/media/profil_images/IMG_20180330_1600482-01.jpg")
-                face_1_image = face_recognition.load_image_file("D:/Sanjeevani/ansh.jpg")
+                face_1_image = face_recognition.load_image_file("C:/Users/abhis/Desktop/Sanjeevani/ansh.jpg")
                 face_1_face_encoding = face_recognition.face_encodings(face_1_image)[0]
 
                 #
