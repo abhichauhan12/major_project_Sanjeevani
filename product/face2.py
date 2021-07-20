@@ -12,7 +12,7 @@ import numpy as np
 # specific demo. If you have trouble installing it, try any of the other demos that don't require it instead.
 
 # Get a reference to webcam #0 (the default one)
-def func(loc):
+def func(loc,username):
     video_capture = cv2.VideoCapture(0)
     arr = loc.split('/')
     # s = "D:/Sanjeevani/"
@@ -33,8 +33,7 @@ def func(loc):
         ansh_face_encoding
     ]
     known_face_names = [
-        # "anupam Jain",
-        arr[-1]
+        username
     ]
 
     # Initialize some variables

@@ -41,7 +41,7 @@ def buy(request, *args, **kwargs):
     }
 
 	if request.method == 'POST':
-		if func(request.user.profile.image.url):
+		if func(request.user.profile.image.url,request.user.username):
 			messages.success(request, f'ORDER PLACED SUCCESFULLY! THANK YOU')
 			return redirect('product-home')
 		else:
